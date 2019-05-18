@@ -10,6 +10,3 @@ class Board():
 
     def has_empty_cells(self):
         return len([c for c in self.board if c == " "]) > 0
-
-    def is_empty_cell(self, id):
-        return self.board[id] == " "
