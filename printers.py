@@ -1,9 +1,27 @@
 from helpers import clear
 
 '''
-Helper class. Prints to console
+    Abstract class:
+        Abstracts logic for all printers
 '''
+
 class Printer():
+    @staticmethod
+    def print_board(board):
+        raise TypeError("Called method on abstract class")
+    
+    @staticmethod
+    def print():
+        raise TypeError("Called method on abstract class")
+
+    @staticmethod
+    def input():
+        raise TypeError("Called method on abstract class")
+
+'''
+    Printer that use console as a main io
+'''
+class ConsolePrinter(Printer):
 
     @staticmethod
     @clear
